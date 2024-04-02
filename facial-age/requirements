@@ -1,0 +1,6 @@
+torch==2.1.2
+torchvision
+tqdm
+gdown==4.6.0
+pillow==10.0.0
+notebook

@@ -1,0 +1,8 @@
+{
+  "batch_size": 16,
+  "img_size": 512,
+  "shuffle": true,
+  "num_classes": 2,
+  "num_epochs": 5,
+  "lr": 0.01
+}

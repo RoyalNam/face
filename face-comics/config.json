@@ -1,0 +1,26 @@
+{
+  "data_ingestion": {
+    "root_dir": "data",
+    "output_path": "data/dataset.zip",
+    "source_url": "https://drive.google.com/file/d/1WHn19ljJBn46oh9gDFbJrp2Hl56Nmb0E/view?usp=sharing"
+  },
+  "dataloader": {
+    "input_dir": "data/face2comics/face",
+    "target_dir": "data/face2comics/comics",
+    "batch_size": 32,
+    "shuffle": true,
+    "num_workers": 2,
+    "img_size": 512
+  },
+  "optimizer": {
+    "disc_lr": 0.0002,
+    "gen_lr": 0.0002
+  },
+  "training": {
+    "num_epochs": 20,
+    "load_model": false,
+    "checkpoint_disc": "disc.pth",
+    "checkpoint_gen": "gen.pth",
+    "l1_lambda": 100
+  }
+}
